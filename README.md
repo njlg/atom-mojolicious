@@ -48,24 +48,24 @@ Inside a Embedded Perl block the following completions are available:
 
 From an EP template you can use these snippets:
 
-`app` -> `app->`
+`app` &rarr; `app->`
 
-`content_for` -> `content_for ${name} => begin`
+`content_for` &rarr; `content_for ${name} => begin`
 
 **Note**: I have the following defined, but they don&rsquo;t seem to work.
 
-`<%` -> `<% $1 %>`
+`<%` &rarr; `<% $1 %>`
 
-`<%=` -> `<%= $1 %>`
+`<%=` &rarr; `<%= $1 %>`
 
-`<%==` -> `<%== $1 %>`
+`<%==` &rarr; `<%== $1 %>`
 
 ### Perl
 
 From a Mojolicious controller (or any perl source) you can use these snippets:
 
-`debug` -> `$self->app->log->debug(${1:'debug message'});`
+`debug` &rarr; `$self->app->log->debug(${1:'debug message'});`
 
-`error` -> `$self->app->log->error(${1:'error message'});`
+`error` &rarr; `$self->app->log->error(${1:'error message'});`
 
-`mdump` -> `$self->app->log->debug($self->dumper(${1:object}));`
+`mdump` &rarr; `$self->app->log->debug($self->dumper(${1:object}));`
