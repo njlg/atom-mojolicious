@@ -1,0 +1,12 @@
+{
+  "name": "Mojolicious",
+  "version": "0.0.1",
+  "description": "Mojolicious language support",
+  "repository": "https://github.com/njlg/atom-mojolicious",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

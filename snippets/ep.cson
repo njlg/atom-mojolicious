@@ -1,0 +1,26 @@
+'.source.perl':
+  'error':
+    'prefix': 'error'
+    'body': '\$self->app->log->error(${1:"error message"});'
+  'mdump':
+    'prefix': 'mdump'
+    'body': '\$self->app->log->debug(\$self->dumper(${1:object}));'
+  'debug':
+    'prefix': 'debug'
+    'body': '\$self->app->log->debug(${1:"debug message"});'
+'.source.mojo.html':
+  'app':
+    'prefix': 'app'
+    'body': 'app->'
+  'content_for':
+    'prefix': 'content_for'
+    'body': 'content_for ${1:name} => begin'
+  'Start Tag':
+    'prefix': '<%'
+    'body': '<% $1 %>'
+  'Start Tag 2':
+    'prefix': '<%='
+    'body': '<%= $1 %>'
+  'Start Tag 3':
+    'prefix': '<%=='
+    'body': '<%== $1 %>'
